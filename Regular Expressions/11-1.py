@@ -11,7 +11,7 @@ regular=input('Enter a regular expression:')
 mail=open('mbox.txt')
 #regex='.*'+regular+'.*'
 for line in mail:
-    line=line.rstrip()
+    #line=line.rstrip()
     if re.search(regular,line):
         count+=1
 
